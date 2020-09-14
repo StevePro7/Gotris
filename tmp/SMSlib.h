@@ -65,7 +65,7 @@ void SMS_setSpriteMode (unsigned char mode) {} //__z88dk_fastcall;
 #define SMS_disableSRAM()       //SRAM_bank_to_be_mapped_on_slot2=0x00
 
 /* SRAM access is as easy as accessing an array of char */
-//__at (0x8000) unsigned char SMS_SRAM[];
+/*__at (0x8000)*/unsigned char SMS_SRAM[ 256 ];
 
 /* wait until next VBlank starts */
 void SMS_waitForVBlank (void) {}
@@ -109,7 +109,7 @@ void SMS_loadTileMapArea (unsigned char x, unsigned char y, void *src, unsigned 
 
 /* functions for sprites handling */
 void SMS_initSprites (void) {}
-signed char SMS_addSprite (unsigned char x, unsigned char y, unsigned char tile) { return -1; }  /* returns -1 if no more sprites are available, -2 if invalid Y coord */
+signed char SMS_addSprite (unsigned char x, unsigned char y, int tile) { return -1; }  /* returns -1 if no more sprites are available, -2 if invalid Y coord */
 signed char SMS_reserveSprite (void) { return -1; }
 void SMS_updateSpritePosition (signed char sprite, unsigned char x, unsigned char y) {}
 void SMS_updateSpriteImage (signed char sprite, unsigned char image) {}
@@ -160,10 +160,10 @@ void SMS_zeroSpritePalette (void) {}
 #endif
 
 /* functions to read joypad(s) */
-unsigned int SMS_getKeysStatus (void) { return 1; }
-unsigned int SMS_getKeysPressed (void) { return 1;}
-unsigned int SMS_getKeysHeld (void) { return 1;}
-unsigned int SMS_getKeysReleased (void) { return 1;}
+unsigned int SMS_getKeysStatus (void) { return 0; }
+unsigned int SMS_getKeysPressed (void) { return 0;}
+unsigned int SMS_getKeysHeld (void) { return 0;}
+unsigned int SMS_getKeysReleased (void) { return 0;}
 
 /* handy defines for joypad(s) handling */
 #ifndef CONTROLLER_PORTS
@@ -225,7 +225,7 @@ unsigned char SMS_VDPType (void) { return 1; }
 #define VDP_NTSC                0x40
 #endif
 
-extern volatile unsigned char SMS_VDPFlags;
+/*extern volatile*/unsigned char SMS_VDPFlags;
 #define VDPFLAG_SPRITEOVERFLOW  0x40
 #define VDPFLAG_SPRITECOLLISION 0x20
 
