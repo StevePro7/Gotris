@@ -14,7 +14,7 @@
 
 void main( void )
 {
-	SMS_setSpritePaletteColor( 0, RGB( 1, 1, 0 ) );
+	SMS_setSpritePaletteColor( 0, RGB( 3, 1, 0 ) );
 	SMS_displayOn();
 	for( ;;)
 	{
