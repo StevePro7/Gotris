@@ -146,16 +146,36 @@
   <ItemGroup>
     <ClCompile Include="devkit\_sms_manager.c" />
     <ClCompile Include="devkit\_snd_manager.c" />
+    <ClCompile Include="engine\content_manager.c" />
+    <ClCompile Include="engine\enum_manager.c" />
+    <ClCompile Include="engine\font_manager.c" />
+    <ClCompile Include="engine\global_manager.c" />
+    <ClCompile Include="engine\locale_manager.c" />
+    <ClCompile Include="engine\screen_manager.c" />
     <ClCompile Include="game.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="screen\none_screen.c" />
+    <ClCompile Include="screen\splash_screen.c" />
+    <ClCompile Include="screen\test_screen.c" />
+    <ClCompile Include="screen\title_screen.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="banks\bank2.h" />
     <ClInclude Include="banks\bank3.h" />
     <ClInclude Include="devkit\_sms_manager.h" />
     <ClInclude Include="devkit\_snd_manager.h" />
+    <ClInclude Include="engine\content_manager.h" />
+    <ClInclude Include="engine\enum_manager.h" />
+    <ClInclude Include="engine\font_manager.h" />
+    <ClInclude Include="engine\global_manager.h" />
+    <ClInclude Include="engine\locale_manager.h" />
+    <ClInclude Include="engine\screen_manager.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="screen\none_screen.h" />
+    <ClInclude Include="screen\splash_screen.h" />
+    <ClInclude Include="screen\test_screen.h" />
+    <ClInclude Include="screen\title_screen.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="build.bat" />
