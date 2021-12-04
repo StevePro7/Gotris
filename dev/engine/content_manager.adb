@@ -1,4 +1,5 @@
 M:content_manager
+F:G$load_title_assets$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$engine_content_manager_load_tiles_font$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$engine_content_manager_load_tiles_game$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$engine_content_manager_load_tiles_main$0$0({2}DF,SV:S),Z,0,0,0,0,0

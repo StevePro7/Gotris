@@ -1,40 +1,79 @@
 ;!FILE content_manager.asm
 XL2
-H 9 areas 1F global symbols
+H 9 areas 46 global symbols
 M content_manager
 O -mz80
+S _titlescreentilemap_stmcompr Ref0000
+S _titlescreenpalette_bin Ref0000
+S _devkit_SMS_loadSTMcompressedTileMap Ref0000
+S _devkit_SMS_loadBGPalette Ref0000
+S _devkit_SMS_loadPSGaidencompressedTiles Ref0000
 S .__.ABS. Def0000
-A _CODE size 5 flags 0 addr 0
-S G$engine_content_manager_load_tiles_splash$0$0 Def0003
-S XG$engine_content_manager_load_tiles_font$0$0 Def0000
-S _engine_content_manager_load_sprites_game Def0004
-S _engine_content_manager_load_tiles_splash Def0003
-S A$content_manager$131 Def0004
-S A$content_manager$114 Def0003
-S G$engine_content_manager_load_tiles_game$0$0 Def0001
-S XG$engine_content_manager_load_sprites_game$0$0 Def0004
-S C$content_manager.c$20$0$0 Def0001
+S _titlescreentiles_psgcompr Ref0000
+S _devkit_SMS_mapROMBank Ref0000
+A _CODE size 2F flags 0 addr 0
+S G$engine_content_manager_load_tiles_splash$0$0 Def002D
+S XG$engine_content_manager_load_tiles_font$0$0 Def002A
+S _engine_content_manager_load_sprites_game Def002E
+S C$content_manager.c$21$1$14 Def002A
+S _engine_content_manager_load_tiles_splash Def002D
+S A$content_manager$150 Def002C
+S C$content_manager.c$41$1$14 Def002C
+S A$content_manager$133 Def002B
+S C$content_manager.c$33$1$14 Def002B
+S G$engine_content_manager_load_tiles_game$0$0 Def002B
+S C$content_manager.c$15$1$14 Def0000
+S A$content_manager$116 Def002A
+S XG$engine_content_manager_load_sprites_game$0$0 Def002E
+S C$content_manager.c$43$1$14 Def002D
+S C$content_manager.c$16$1$14 Def0008
+S C$content_manager.c$53$1$14 Def002E
+S C$content_manager.c$35$1$14 Def002C
+S C$content_manager.c$26$1$14 Def002A
+S C$content_manager.c$17$1$14 Def0014
+S C$content_manager.c$18$1$14 Def0021
+S C$content_manager.c$28$1$14 Def002B
+S C$content_manager.c$19$1$14 Def0029
+S A$content_manager$184 Def002E
+S A$content_manager$167 Def002D
+S C$content_manager.c$58$1$14 Def002E
+S C$content_manager.c$49$1$14 Def002D
 S C$content_manager.c$13$0$0 Def0000
-S C$content_manager.c$50$0$0 Def0004
-S XG$engine_content_manager_load_tiles_splash$0$0 Def0003
-S C$content_manager.c$41$0$0 Def0003
-S C$content_manager.c$33$0$0 Def0002
-S G$engine_content_manager_load_tiles_main$0$0 Def0002
-S C$content_manager.c$25$0$0 Def0001
-S C$content_manager.c$35$0$0 Def0003
-S _engine_content_manager_load_tiles_game Def0001
-S C$content_manager.c$45$0$0 Def0004
-S C$content_manager.c$27$0$0 Def0002
-S C$content_manager.c$18$0$0 Def0000
-S A$content_manager$80 Def0001
-S A$content_manager$63 Def0000
-S _engine_content_manager_load_tiles_main Def0002
-S XG$engine_content_manager_load_tiles_game$0$0 Def0001
-S A$content_manager$97 Def0002
-S G$engine_content_manager_load_tiles_font$0$0 Def0000
-S XG$engine_content_manager_load_tiles_main$0$0 Def0002
-S G$engine_content_manager_load_sprites_game$0$0 Def0004
-S _engine_content_manager_load_tiles_font Def0000
+S XG$engine_content_manager_load_tiles_splash$0$0 Def002D
+S G$engine_content_manager_load_tiles_main$0$0 Def002C
+S _engine_content_manager_load_tiles_game Def002B
+S G$load_title_assets$0$0 Def0000
+S A$content_manager$81 Def0014
+S A$content_manager$72 Def0008
+S A$content_manager$91 Def0021
+S A$content_manager$82 Def0017
+S A$content_manager$73 Def000B
+S A$content_manager$64 Def0000
+S A$content_manager$92 Def0024
+S A$content_manager$83 Def0018
+S A$content_manager$74 Def000C
+S A$content_manager$65 Def0002
+S A$content_manager$93 Def0025
+S A$content_manager$84 Def001B
+S A$content_manager$75 Def000F
+S A$content_manager$66 Def0003
+S A$content_manager$94 Def0028
+S A$content_manager$85 Def001C
+S A$content_manager$76 Def0010
+S A$content_manager$67 Def0004
+S A$content_manager$86 Def001F
+S A$content_manager$77 Def0013
+S A$content_manager$68 Def0007
+S _engine_content_manager_load_tiles_main Def002C
+S A$content_manager$87 Def0020
+S XG$engine_content_manager_load_tiles_game$0$0 Def002B
+S A$content_manager$99 Def0029
+S G$engine_content_manager_load_tiles_font$0$0 Def002A
+S _load_title_assets Def0000
+S XG$engine_content_manager_load_tiles_main$0$0 Def002C
+S G$engine_content_manager_load_sprites_game$0$0 Def002E
+S XG$load_title_assets$0$0 Def0029
+S _engine_content_manager_load_tiles_font Def002A
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -45,21 +84,31 @@ A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
 T 00 00
 R 00 00 00 00
-T 00 00 C9
+T 00 00 3E 02 F5 33 CD 00 00 33 21 00 00 E5 21
+R 00 00 00 00 02 07 07 00
+T 0D 00 00 00 E5 CD 00 00 F1 21 00 00 E3 21 00 00
+R 00 00 00 00 02 02 06 00 02 06 04 00 02 0A 00 00
+T 1B 00 E5 CD 00 00 F1 F1 01 00 00 C5 CD 00 00 F1
+R 00 00 00 00 02 04 02 00 02 09 01 00 02 0D 03 00
+T 29 00 C9
 R 00 00 00 00
-T 01 00
+T 2A 00
 R 00 00 00 00
-T 01 00 C9
+T 2A 00 C9
 R 00 00 00 00
-T 02 00
+T 2B 00
 R 00 00 00 00
-T 02 00 C9
+T 2B 00 C9
 R 00 00 00 00
-T 03 00
+T 2C 00
 R 00 00 00 00
-T 03 00 C9
+T 2C 00 C9
 R 00 00 00 00
-T 04 00
+T 2D 00
 R 00 00 00 00
-T 04 00 C9
+T 2D 00 C9
+R 00 00 00 00
+T 2E 00
+R 00 00 00 00
+T 2E 00 C9
 R 00 00 00 00

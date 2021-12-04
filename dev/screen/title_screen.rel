@@ -1,36 +1,29 @@
 ;!FILE title_screen.asm
 XL2
-H 9 areas 20 global symbols
+H 9 areas 19 global symbols
 M title_screen
 O -mz80
 S .__.ABS. Def0000
-S _devkit_SMS_setSpritePaletteColor Ref0000
-A _CODE size 14 flags 0 addr 0
-S XG$screen_title_screen_load$0$0 Def000C
-S G$screen_title_screen_update$0$0 Def000D
-S A$title_screen$102 Def0013
-S _screen_title_screen_update Def000D
-S C$title_screen.c$60$1$15 Def000D
+S _load_title_assets Ref0000
+A _CODE size A flags 0 addr 0
+S XG$screen_title_screen_load$0$0 Def0000
+S G$screen_title_screen_update$0$0 Def0003
+S _screen_title_screen_update Def0003
+S C$title_screen.c$61$1$15 Def0003
 S C$title_screen.c$27$1$15 Def0000
-S C$title_screen.c$62$1$17 Def000D
-S C$title_screen.c$63$1$17 Def0013
-S C$title_screen.c$58$1$15 Def000C
+S C$title_screen.c$63$1$17 Def0003
+S C$title_screen.c$64$1$17 Def0009
+S C$title_screen.c$59$1$15 Def0000
 S C$title_screen.c$25$0$0 Def0000
-S XG$screen_title_screen_update$0$0 Def0013
-S A$title_screen$70 Def0003
-S A$title_screen$80 Def000C
-S A$title_screen$71 Def0004
+S XG$screen_title_screen_update$0$0 Def0009
 S G$screen_title_screen_load$0$0 Def0000
-S A$title_screen$72 Def0006
-S A$title_screen$73 Def0007
-S A$title_screen$74 Def000A
-S A$title_screen$93 Def000D
-S A$title_screen$75 Def000B
-S A$title_screen$94 Def000E
-S A$title_screen$95 Def000F
-S A$title_screen$96 Def0010
-S A$title_screen$69 Def0000
-S A$title_screen$97 Def0011
+S A$title_screen$90 Def0007
+S A$title_screen$73 Def0000
+S A$title_screen$95 Def0009
+S A$title_screen$86 Def0003
+S A$title_screen$87 Def0004
+S A$title_screen$88 Def0005
+S A$title_screen$89 Def0006
 S _screen_title_screen_load Def0000
 A _DATA size 4 flags 0 addr 0
 S Ftitle_screen$distance$0$0 Def0003
@@ -62,9 +55,9 @@ T 03 00
 R 00 00 01 00
 T 00 00
 R 00 00 00 00
-T 00 00 21 00 03 E5 26 00 E5 CD 00 00 F1 F1 C9
-R 00 00 00 00 02 0A 01 00
-T 0D 00
+T 00 00 C3 00 00
+R 00 00 00 00 02 03 01 00
+T 03 00
 R 00 00 00 00
-T 0D 00 C1 E1 E5 C5 36 02 C9
+T 03 00 C1 E1 E5 C5 36 02 C9
 R 00 00 00 00

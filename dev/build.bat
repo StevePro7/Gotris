@@ -14,7 +14,7 @@ cd engine
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 boss_manager.c
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 collision_manager.c
 ::::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 command_manager.c
-::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 content_manager.c
+sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 content_manager.c
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 enemy_manager.c
 ::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 enum_manager.c
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 font_manager.c

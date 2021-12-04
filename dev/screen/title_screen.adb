@@ -6,6 +6,12 @@ S:Ftitle_screen$event_stage$0$0({1}SC:U),E,0,0
 S:Ftitle_screen$flash_count$0$0({1}SC:U),E,0,0
 S:Ftitle_screen$cheat_count$0$0({1}SC:U),E,0,0
 S:Ftitle_screen$distance$0$0({1}SC:U),E,0,0
+S:G$load_title_assets$0$0({2}DF,SV:S),C,0,0
+S:G$engine_content_manager_load_tiles_font$0$0({2}DF,SV:S),C,0,0
+S:G$engine_content_manager_load_tiles_game$0$0({2}DF,SV:S),C,0,0
+S:G$engine_content_manager_load_tiles_main$0$0({2}DF,SV:S),C,0,0
+S:G$engine_content_manager_load_tiles_splash$0$0({2}DF,SV:S),C,0,0
+S:G$engine_content_manager_load_sprites_game$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_init$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_displayOn$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_displayOff$0$0({2}DF,SV:S),C,0,0

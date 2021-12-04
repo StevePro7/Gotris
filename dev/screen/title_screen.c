@@ -1,5 +1,5 @@
 #include "title_screen.h"
-//#include "..\engine\audio_manager.h"
+#include "..\engine\content_manager.h"
 #include "..\engine\enum_manager.h"
 //#include "..\engine\font_manager.h"
 //#include "..\engine\global_manager.h"
@@ -24,6 +24,7 @@ static unsigned char distance;
 
 void screen_title_screen_load()
 {
+	load_title_assets();
 	//devkit_SMS_setSpritePaletteColor( 0, 0, 0, 3 );
 
 	//struct_state_object *st = &global_state_object;
