@@ -42,6 +42,20 @@ unsigned char* devkit_SMS_SRAM()
 	return SMS_SRAM;
 }
 
+void devkit_SMS_setBGScrollX( unsigned char scrollX )
+{
+	SMS_setBGScrollX( scrollX );
+}
+void devkit_SMS_setBGScrollY( unsigned char scrollY )
+{
+	SMS_setBGScrollY( scrollY );
+}
+void devkit_SMS_setBackdropColor( unsigned char entry )
+{
+	SMS_setBackdropColor( entry );
+}
+
+
 
 void devkit_SMS_setSpriteMode( unsigned char mode )
 {
@@ -128,6 +142,24 @@ unsigned char devkit_SMS_queryPauseRequested()
 void devkit_SMS_resetPauseRequest()
 {
 	SMS_resetPauseRequest();
+}
+
+void devkit_SMS_setLineInterruptHandler( void( *theHandlerFunction )( void ) )
+{
+	SMS_setLineInterruptHandler( *theHandlerFunction );
+}
+void devkit_SMS_setLineCounter( unsigned char count )
+{
+	SMS_setLineCounter( count );
+}
+void devkit_SMS_enableLineInterrupt()
+{
+	SMS_VDPturnOnFeature( 0x0010 );   /* turns on line IRQ */
+}
+
+void devkit_SMS_disableLineInterrupt()
+{
+	SMS_VDPturnOffFeature( 0x0010 );  /* turns off line IRQ */
 }
 
 // collision

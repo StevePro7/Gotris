@@ -13,6 +13,9 @@ S:G$devkit_SMS_enableSRAM$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_enableSRAMBank$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_disableSRAM$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_SRAM$0$0({2}DF,DG,SC:U),C,0,0
+S:G$devkit_SMS_setBGScrollX$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_setBGScrollY$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_setBackdropColor$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setSpriteMode$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_useFirstHalfTilesforSprites_False$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_useFirstHalfTilesforSprites_True$0$0({2}DF,SV:S),C,0,0
@@ -33,6 +36,10 @@ S:G$devkit_SMS_copySpritestoSAT$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_UNSAFE_SMS_copySpritestoSAT$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_queryPauseRequested$0$0({2}DF,SC:U),C,0,0
 S:G$devkit_SMS_resetPauseRequest$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_setLineInterruptHandler$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_setLineCounter$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_enableLineInterrupt$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_disableLineInterrupt$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_isCollisionDetected$0$0({2}DF,SC:U),C,0,0
 S:G$devkit_SMS_getKeysStatus$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_SPRITEMODE_NORMAL$0$0({2}DF,SC:U),C,0,0

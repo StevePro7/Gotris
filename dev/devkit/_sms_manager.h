@@ -11,6 +11,10 @@ void devkit_SMS_enableSRAMBank( unsigned char n );
 void devkit_SMS_disableSRAM();
 unsigned char* devkit_SMS_SRAM();
 
+void devkit_SMS_setBGScrollX( unsigned char scrollX ); // __z88dk_fastcall;
+void devkit_SMS_setBGScrollY( unsigned char scrollY ); // __z88dk_fastcall;
+void devkit_SMS_setBackdropColor( unsigned char entry ); // __z88dk_fastcall;
+
 void devkit_SMS_setSpriteMode( unsigned char mode );
 void devkit_SMS_useFirstHalfTilesforSprites_False();
 void devkit_SMS_useFirstHalfTilesforSprites_True();
@@ -36,6 +40,12 @@ void devkit_UNSAFE_SMS_copySpritestoSAT();
 
 unsigned char devkit_SMS_queryPauseRequested();
 void devkit_SMS_resetPauseRequest();
+
+/* line interrupt */
+void devkit_SMS_setLineInterruptHandler( void( *theHandlerFunction )( void ) );
+void devkit_SMS_setLineCounter( unsigned char count );
+void devkit_SMS_enableLineInterrupt(); //   SMS_VDPturnOnFeature( 0x0010 )   /* turns on line IRQ */
+void devkit_SMS_disableLineInterrupt(); //  SMS_VDPturnOffFeature( 0x0010 )  /* turns off line IRQ */
 
 // collision
 unsigned char devkit_isCollisionDetected();

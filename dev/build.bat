@@ -1,10 +1,10 @@
 @echo off
 
 :: Compile
-::cd devkit
-::sdcc -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 _sms_manager.c
+cd devkit
+sdcc -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 _sms_manager.c
 ::sdcc -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 _snd_manager.c
-::cd ..
+cd ..
 
 cd engine
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 asm_manager.c
@@ -32,6 +32,7 @@ sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 co
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 option_manager.c
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 score_manager.c
 ::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 screen_manager.c
+sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 scroll_manager.c
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 sprite_manager.c
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 state_manager.c
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 storage_manager.c
@@ -74,7 +75,7 @@ devkit\_sms_manager.rel devkit\_snd_manager.rel ^
 engine\content_manager.rel engine\enum_manager.rel ^
 engine\font_manager.rel engine\hack_manager.rel ^
 engine\input_manager.rel engine\locale_manager.rel ^
-engine\screen_manager.rel ^
+engine\screen_manager.rel engine\scroll_manager.rel ^
 screen\none_screen.rel screen\splash_screen.rel screen\title_screen.rel ^
 screen\test_screen.rel
 

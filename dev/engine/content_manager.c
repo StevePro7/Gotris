@@ -14,8 +14,8 @@ void load_title_assets()
 {
 	devkit_SMS_mapROMBank( titlescreentiles_psgcompr_bank );
 	devkit_SMS_loadPSGaidencompressedTiles( titlescreentiles_psgcompr, 0 );
-	devkit_SMS_loadSTMcompressedTileMap( 0, 0, titlescreentilemap_stmcompr );
-	devkit_SMS_loadBGPalette( ( void * ) titlescreenpalette_bin );
+	devkit_SMS_loadSTMcompressedTileMap( 0, 0, ( void* ) titlescreentilemap_stmcompr );
+	devkit_SMS_loadBGPalette( ( void* ) titlescreenpalette_bin );
 }
 
 void engine_content_manager_load_tiles_font()

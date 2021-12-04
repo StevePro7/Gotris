@@ -93,6 +93,9 @@
     <ClCompile Include="banks\bank3.c">
       <Filter>Source Files\banks</Filter>
     </ClCompile>
+    <ClCompile Include="engine\scroll_manager.c">
+      <Filter>Source Files\screen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -147,6 +150,9 @@
       <Filter>Header Files\engine</Filter>
     </ClInclude>
     <ClInclude Include="engine\input_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\scroll_manager.h">
       <Filter>Header Files\engine</Filter>
     </ClInclude>
   </ItemGroup>

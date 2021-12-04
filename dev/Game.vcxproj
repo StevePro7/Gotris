@@ -156,6 +156,7 @@
     <ClCompile Include="engine\input_manager.c" />
     <ClCompile Include="engine\locale_manager.c" />
     <ClCompile Include="engine\screen_manager.c" />
+    <ClCompile Include="engine\scroll_manager.c" />
     <ClCompile Include="game.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="screen\none_screen.c" />
@@ -176,6 +177,7 @@
     <ClInclude Include="engine\input_manager.h" />
     <ClInclude Include="engine\locale_manager.h" />
     <ClInclude Include="engine\screen_manager.h" />
+    <ClInclude Include="engine\scroll_manager.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="screen\none_screen.h" />
