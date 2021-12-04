@@ -24,7 +24,7 @@ static unsigned char distance;
 
 void screen_title_screen_load()
 {
-	devkit_SMS_setSpritePaletteColor( 0, 0, 0, 3 );
+	//devkit_SMS_setSpritePaletteColor( 0, 0, 0, 3 );
 
 	//struct_state_object *st = &global_state_object;
 	//struct_hack_object *ho = &global_hack_object;

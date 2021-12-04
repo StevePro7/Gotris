@@ -2,6 +2,8 @@
 #define _CONTENT_MANAGER_H_
 
 // Tiles.
+void load_title_assets();
+
 void engine_content_manager_load_tiles_font();
 void engine_content_manager_load_tiles_game();
 void engine_content_manager_load_tiles_main();
