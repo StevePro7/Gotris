@@ -1,0 +1,13 @@
+M:font_manager
+F:G$engine_font_manager_draw_char$0$0({2}DF,SV:S),Z,0,0,0,0,0
+S:Lfont_manager.engine_font_manager_draw_char$ch$1$4({1}SC:U),B,1,4
+S:Lfont_manager.engine_font_manager_draw_char$x$1$4({1}SC:U),B,1,5
+S:Lfont_manager.engine_font_manager_draw_char$y$1$4({1}SC:U),B,1,6
+F:G$engine_font_manager_draw_text$0$0({2}DF,SV:S),Z,0,0,0,0,0
+S:Lfont_manager.engine_font_manager_draw_text$text$1$6({2}DG,SC:U),B,1,4
+S:Lfont_manager.engine_font_manager_draw_text$x$1$6({1}SC:U),B,1,6
+S:Lfont_manager.engine_font_manager_draw_text$y$1$6({1}SC:U),B,1,7
+F:G$engine_font_manager_draw_data$0$0({2}DF,SV:S),Z,0,0,0,0,0
+S:Lfont_manager.engine_font_manager_draw_data$data$1$8({2}SI:U),B,1,4
+S:Lfont_manager.engine_font_manager_draw_data$x$1$8({1}SC:U),B,1,6
+S:Lfont_manager.engine_font_manager_draw_data$y$1$8({1}SC:U),B,1,7

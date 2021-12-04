@@ -1,0 +1,45 @@
+;!FILE hack_manager.asm
+XL2
+H 9 areas 13 global symbols
+M hack_manager
+O -mz80
+S .__.ABS. Def0000
+A _CODE size 3 flags 0 addr 0
+S A$hack_manager$61 Def0000
+S _engine_hack_manager_load Def0001
+S A$hack_manager$95 Def0002
+S XG$engine_hack_manager_invert$0$0 Def0002
+S A$hack_manager$78 Def0001
+S G$engine_hack_manager_init$0$0 Def0000
+S XG$engine_hack_manager_load$0$0 Def0001
+S _engine_hack_manager_init Def0000
+S XG$engine_hack_manager_init$0$0 Def0000
+S G$engine_hack_manager_invert$0$0 Def0002
+S C$hack_manager.c$156$0$0 Def0002
+S C$hack_manager.c$20$0$0 Def0000
+S G$engine_hack_manager_load$0$0 Def0001
+S C$hack_manager.c$43$0$0 Def0000
+S _engine_hack_manager_invert Def0002
+S C$hack_manager.c$71$0$0 Def0001
+S C$hack_manager.c$45$0$0 Def0001
+S C$hack_manager.c$73$0$0 Def0002
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 C9
+R 00 00 00 00
+T 01 00
+R 00 00 00 00
+T 01 00 C9
+R 00 00 00 00
+T 02 00
+R 00 00 00 00
+T 02 00 C9
+R 00 00 00 00

@@ -1,0 +1,25 @@
+;!FILE locale_manager.asm
+XL2
+H 9 areas 7 global symbols
+M locale_manager
+O -mz80
+S .__.ABS. Def0000
+A _CODE size 1 flags 0 addr 0
+S G$engine_locale_manager_draw_text$0$0 Def0000
+S _engine_locale_manager_draw_text Def0000
+S C$locale_manager.c$14$0$0 Def0000
+S XG$engine_locale_manager_draw_text$0$0 Def0000
+S A$locale_manager$59 Def0000
+S C$locale_manager.c$8$0$0 Def0000
+A _DATA size 0 flags 0 addr 0
+A _INITIALIZED size 0 flags 0 addr 0
+A _DABS size 0 flags 8 addr 0
+A _HOME size 0 flags 0 addr 0
+A _GSINIT size 0 flags 0 addr 0
+A _GSFINAL size 0 flags 0 addr 0
+A _INITIALIZER size 0 flags 0 addr 0
+A _CABS size 0 flags 8 addr 0
+T 00 00
+R 00 00 00 00
+T 00 00 C9
+R 00 00 00 00
