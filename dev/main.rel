@@ -1,19 +1,24 @@
 XL2
-H 9 areas C global symbols
+H 9 areas 11 global symbols
 M main
 O -mz80
-S _devkit_SMS_displayOn Ref0000
+S _engine_input_manager_update Ref0000
+S _engine_screen_manager_init Ref0000
+S _devkit_SMS_copySpritestoSAT Ref0000
 S _devkit_SMS_init Ref0000
+S _devkit_PSGSFXFrame Ref0000
+S _engine_screen_manager_update Ref0000
 S _devkit_SMS_VDPturnOnFeature Ref0000
+S _devkit_SMS_finalizeSprites Ref0000
 S _devkit_VDPFEATURE_HIDEFIRSTCOL Ref0000
+S _devkit_PSGFrame Ref0000
 S .__.ABS. Def0000
 S _devkit_SMS_setSpriteMode Ref0000
 S _devkit_SMS_useFirstHalfTilesforSprites_False Ref0000
-S _devkit_SMS_displayOff Ref0000
-S _devkit_SMS_setSpritePaletteColor Ref0000
 S _devkit_SPRITEMODE_NORMAL Ref0000
 S _devkit_SMS_waitForVBlank Ref0000
-A _CODE size 2F flags 0 addr 0
+S _devkit_SMS_initSprites Ref0000
+A _CODE size 39 flags 0 addr 0
 S _main Def0000
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
@@ -25,15 +30,17 @@ A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
 T 00 00
 R 00 00 00 00
-T 00 00 CD 00 00 CD 00 00 CD 00 00 45 C5 33 CD
-R 00 00 00 00 02 03 01 00 02 06 07 00 02 09 09 00
-T 0D 00 00 00 33 CD 00 00 CD 00 00 E5 CD
-R 00 00 00 00 02 02 05 00 02 06 06 00 02 09 03 00
-T 18 00 00 00 F1 21 00 00 E5 26 03 E5 CD 00 00 F1
-R 00 00 00 00 02 02 02 00 02 0D 08 00
-T 26 00 F1 CD 00 00
-R 00 00 00 00 02 04 00 00
-T 2A 00
+T 00 00 CD 00 00 CD 00 00 45 C5 33 CD 00 00 33 CD
+R 00 00 00 00 02 03 03 00 02 06 0D 00 02 0C 0B 00
+T 0E 00 00 00 CD 00 00 E5 CD 00 00 26 02 E3 33 CD
+R 00 00 00 00 02 02 0C 00 02 05 08 00 02 09 06 00
+T 1C 00 00 00 33
+R 00 00 00 00 02 02 01 00
+T 1F 00
 R 00 00 00 00
-T 2A 00 CD 00 00 18 FB
-R 00 00 00 00 02 03 0A 00
+T 1F 00 CD 00 00 CD 00 00 CD 00 00 CD
+R 00 00 00 00 02 03 0F 00 02 06 00 00 02 09 05 00
+T 29 00 00 00 CD 00 00 CD 00 00 CD
+R 00 00 00 00 02 02 07 00 02 05 0E 00 02 08 02 00
+T 32 00 00 00 CD 00 00 18 E6
+R 00 00 00 00 02 02 09 00 02 05 04 00
