@@ -1,28 +1,9 @@
-;!FILE font_manager.asm
 XL2
-H 9 areas 13 global symbols
+H 9 areas 1 global symbols
 M font_manager
 O -mz80
 S .__.ABS. Def0000
-A _CODE size 3 flags 0 addr 0
-S G$engine_font_manager_draw_text$0$0 Def0001
-S _engine_font_manager_draw_text Def0001
-S C$font_manager.c$20$0$0 Def0001
-S C$font_manager.c$12$0$0 Def0000
-S C$font_manager.c$32$0$0 Def0001
-S C$font_manager.c$60$0$0 Def0002
-S C$font_manager.c$34$0$0 Def0002
-S C$font_manager.c$18$0$0 Def0000
-S G$engine_font_manager_draw_data$0$0 Def0002
-S A$font_manager$61 Def0000
-S XG$engine_font_manager_draw_text$0$0 Def0001
-S G$engine_font_manager_draw_char$0$0 Def0000
-S A$font_manager$95 Def0002
-S A$font_manager$78 Def0001
-S _engine_font_manager_draw_data Def0002
-S _engine_font_manager_draw_char Def0000
-S XG$engine_font_manager_draw_data$0$0 Def0002
-S XG$engine_font_manager_draw_char$0$0 Def0000
+A _CODE size 0 flags 0 addr 0
 A _DATA size 0 flags 0 addr 0
 A _INITIALIZED size 0 flags 0 addr 0
 A _DABS size 0 flags 8 addr 0
@@ -31,15 +12,3 @@ A _GSINIT size 0 flags 0 addr 0
 A _GSFINAL size 0 flags 0 addr 0
 A _INITIALIZER size 0 flags 0 addr 0
 A _CABS size 0 flags 8 addr 0
-T 00 00
-R 00 00 00 00
-T 00 00 C9
-R 00 00 00 00
-T 01 00
-R 00 00 00 00
-T 01 00 C9
-R 00 00 00 00
-T 02 00
-R 00 00 00 00
-T 02 00 C9
-R 00 00 00 00

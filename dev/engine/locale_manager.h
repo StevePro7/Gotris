@@ -9,6 +9,4 @@
 #define LOCALE_SELECT_SPACES	"  "
 #define LOCALE_SELECT_SPACE		" "
 
-void engine_locale_manager_draw_text( unsigned char index, unsigned char x, unsigned char y );
-
 #endif//_LOCALE_MANAGER_H_

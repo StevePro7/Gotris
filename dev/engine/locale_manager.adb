@@ -1,11 +1,4 @@
 M:locale_manager
-F:G$engine_locale_manager_draw_text$0$0({2}DF,SV:S),Z,0,0,0,0,0
-S:Llocale_manager.engine_locale_manager_draw_text$index$1$18({1}SC:U),B,1,4
-S:Llocale_manager.engine_locale_manager_draw_text$x$1$18({1}SC:U),B,1,5
-S:Llocale_manager.engine_locale_manager_draw_text$y$1$18({1}SC:U),B,1,6
-S:G$engine_font_manager_draw_char$0$0({2}DF,SV:S),C,0,0
-S:G$engine_font_manager_draw_text$0$0({2}DF,SV:S),C,0,0
-S:G$engine_font_manager_draw_data$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_init$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_displayOn$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_displayOff$0$0({2}DF,SV:S),C,0,0

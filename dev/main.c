@@ -13,7 +13,7 @@ void main( void )
 	devkit_SMS_VDPturnOnFeature( devkit_VDPFEATURE_HIDEFIRSTCOL() );
 	//devkit_SMS_zeroBGPalette();		// TODO
 
-	devkit_SMS_setSpritePaletteColor( 0, 1, 1, 1 );
+	devkit_SMS_setSpritePaletteColor( 0, 3, 0, 0 );
 	devkit_SMS_displayOn();
 	for( ;;)
 	{
