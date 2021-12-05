@@ -23,4 +23,8 @@ unsigned char devkit_SFX_CHANNEL2();
 unsigned char devkit_SFX_CHANNEL3();
 unsigned char devkit_SFX_CHANNELS2AND3();
 
+// helper functions.
+void devkit_PSGFrame_Check();
+void devkit_PSGSFXFrame_Check();
+
 #endif//_PSG_MANAGER_H_

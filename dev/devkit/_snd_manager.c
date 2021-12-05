@@ -75,3 +75,24 @@ unsigned char devkit_SFX_CHANNELS2AND3()
 {
 	return SFX_CHANNELS2AND3;
 }
+
+// helper functions.
+void devkit_PSGFrame_Check()
+{
+	if( PSGGetStatus() == PSG_PLAYING )
+	{
+		PSGFrame();
+	}
+
+}
+void devkit_PSGSFXFrame_Check()
+{
+	if( PSGSFXGetStatus() == PSG_PLAYING )
+	{
+		PSGSFXFrame();
+	}
+	else
+	{
+		PSGSFXStop();
+	}
+}

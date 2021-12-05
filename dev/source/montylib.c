@@ -22,16 +22,8 @@
 //}
 
 void waitForFrame(){
-    ////if(!pause) {
-    //    if(devkit_PSGGetStatus() == PSG_PLAYING){
-    //        PSGFrame();
-    //    }
-    //    if(PSGSFXGetStatus() == PSG_PLAYING){
-    //        PSGSFXFrame();
-    //    } else {
-    //        PSGSFXStop();
-    //    }
-    ////}
+	devkit_PSGFrame_Check();
+	devkit_PSGSFXFrame_Check();
     devkit_SMS_waitForVBlank();
 }
 
