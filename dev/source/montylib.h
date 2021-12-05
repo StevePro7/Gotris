@@ -27,7 +27,7 @@ void waitForFrame();
 //unsigned char getKeysHeld();
 
 //void fadeOutBGPalette(unsigned char *palette);
-//void fadeInBGPalette(unsigned char *palette);
+void fadeInBGPalette(unsigned char *palette);
 //void fadeOutSpritePalette(unsigned char *palette);
 //void fadeInSpritePalette(unsigned char *palette);
 

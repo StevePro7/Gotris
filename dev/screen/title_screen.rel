@@ -1,39 +1,32 @@
 ;!FILE title_screen.asm
 XL2
-H 9 areas 23 global symbols
+H 9 areas 1C global symbols
 M title_screen
 O -mz80
 S .__.ABS. Def0000
-S _devkit_SMS_setSpritePaletteColor Ref0000
+S _title_fade_in Ref0000
 S _load_title_assets Ref0000
-A _CODE size 17 flags 0 addr 0
-S XG$screen_title_screen_load$0$0 Def000F
-S G$screen_title_screen_update$0$0 Def0010
-S A$title_screen$100 Def0012
-S A$title_screen$101 Def0013
-S A$title_screen$102 Def0014
-S _screen_title_screen_update Def0010
-S A$title_screen$107 Def0016
-S C$title_screen.c$63$1$30 Def0010
-S C$title_screen.c$64$1$30 Def0016
-S C$title_screen.c$61$1$28 Def0010
-S C$title_screen.c$27$1$28 Def0000
-S C$title_screen.c$28$1$28 Def0003
-S C$title_screen.c$25$0$0 Def0000
-S XG$screen_title_screen_update$0$0 Def0016
-S C$title_screen.c$59$1$28 Def000F
+A _CODE size D flags 0 addr 0
+S XG$screen_title_screen_load$0$0 Def0003
+S G$screen_title_screen_update$0$0 Def0006
+S A$title_screen$100 Def000C
+S _screen_title_screen_update Def0006
+S C$title_screen.c$32$1$28 Def0003
+S C$title_screen.c$67$1$30 Def0006
+S C$title_screen.c$68$1$30 Def000C
+S C$title_screen.c$63$1$28 Def0003
+S C$title_screen.c$65$1$28 Def0006
+S C$title_screen.c$29$1$28 Def0000
+S XG$screen_title_screen_update$0$0 Def000C
+S C$title_screen.c$27$0$0 Def0000
 S A$title_screen$70 Def0000
-S A$title_screen$80 Def000E
 S G$screen_title_screen_load$0$0 Def0000
-S A$title_screen$74 Def0003
-S A$title_screen$75 Def0006
-S A$title_screen$85 Def000F
-S A$title_screen$76 Def0007
-S A$title_screen$77 Def0009
-S A$title_screen$78 Def000A
-S A$title_screen$79 Def000D
-S A$title_screen$98 Def0010
-S A$title_screen$99 Def0011
+S A$title_screen$91 Def0006
+S A$title_screen$92 Def0007
+S A$title_screen$93 Def0008
+S A$title_screen$94 Def0009
+S A$title_screen$95 Def000A
+S A$title_screen$78 Def0003
 S _screen_title_screen_load Def0000
 A _DATA size 4 flags 0 addr 0
 S Ftitle_screen$distance$0$0 Def0003
@@ -65,11 +58,9 @@ T 03 00
 R 00 00 01 00
 T 00 00
 R 00 00 00 00
-T 00 00 CD 00 00 21 00 03 E5 26 00 E5 CD 00 00 F1
-R 00 00 00 00 02 03 02 00 02 0D 01 00
-T 0E 00 F1 C9
+T 00 00 CD 00 00 C3 00 00
+R 00 00 00 00 02 03 02 00 02 06 01 00
+T 06 00
 R 00 00 00 00
-T 10 00
-R 00 00 00 00
-T 10 00 C1 E1 E5 C5 36 02 C9
+T 06 00 C1 E1 E5 C5 36 02 C9
 R 00 00 00 00

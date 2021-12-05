@@ -165,17 +165,17 @@ void devkit_SMS_disableLineInterrupt()
 }
 
 /* SMS functions to set a color / load a palette */
-void devkit_RGB( const unsigned char r, const unsigned char g, const unsigned char b )
+unsigned char devkit_RGB( const unsigned char r, const unsigned char g, const unsigned char b )
 {
-	RGB( r, g, b );
+	return RGB( r, g, b );
 }
-void devkit_RGB8( const unsigned char r, const unsigned char g, const unsigned char b )
+unsigned char devkit_RGB8( const unsigned char r, const unsigned char g, const unsigned char b )
 {
-	RGB8( r, g, b );
+	return RGB8( r, g, b );
 }
-void devkit_RGBHTML( const unsigned long RGB24bit )
+unsigned long devkit_RGBHTML( const unsigned long RGB24bit )
 {
-	RGBHTML( RGB24bit );
+	return RGBHTML( RGB24bit );
 }
 void devkit_SMS_loadBGPaletteHalfBrightness( void *palette )
 {

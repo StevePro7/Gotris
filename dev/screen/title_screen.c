@@ -1,12 +1,14 @@
 #include "title_screen.h"
 #include "..\engine\content_manager.h"
 #include "..\engine\enum_manager.h"
+#include "..\engine\fade_manager.h"
 //#include "..\engine\font_manager.h"
 //#include "..\engine\global_manager.h"
 //#include "..\engine\hack_manager.h"
 //#include "..\engine\input_manager.h"
 //#include "..\engine\locale_manager.h"
 //#include "..\engine\option_manager.h"
+#include "..\engine\scroll_manager.h"
 //#include "..\engine\state_manager.h"
 //#include "..\engine\timer_manager.h"
 //#include "..\object\locale_object.h"
@@ -25,7 +27,9 @@ static unsigned char distance;
 void screen_title_screen_load()
 {
 	load_title_assets();
-	devkit_SMS_setSpritePaletteColor( 0, 0, 0, 3 );
+	//devkit_SMS_setSpritePaletteColor( 0, 3, 0, 3 );
+	//init_scroll_title_screen();
+	title_fade_in();
 
 	//struct_state_object *st = &global_state_object;
 	//struct_hack_object *ho = &global_hack_object;

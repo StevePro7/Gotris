@@ -2,6 +2,8 @@ M:title_screen
 F:G$screen_title_screen_load$0$0({2}DF,SV:S),Z,0,0,0,0,0
 F:G$screen_title_screen_update$0$0({2}DF,SV:S),Z,0,0,0,0,0
 S:Ltitle_screen.screen_title_screen_update$screen_type$1$29({2}DG,SC:U),B,1,4
+S:G$scroll_x$0$0({12}DA6d,SI:U),E,0,0
+S:G$lineCnt$0$0({1}SC:U),E,0,0
 S:Ftitle_screen$event_stage$0$0({1}SC:U),E,0,0
 S:Ftitle_screen$flash_count$0$0({1}SC:U),E,0,0
 S:Ftitle_screen$cheat_count$0$0({1}SC:U),E,0,0
@@ -12,6 +14,9 @@ S:G$engine_content_manager_load_tiles_game$0$0({2}DF,SV:S),C,0,0
 S:G$engine_content_manager_load_tiles_main$0$0({2}DF,SV:S),C,0,0
 S:G$engine_content_manager_load_tiles_splash$0$0({2}DF,SV:S),C,0,0
 S:G$engine_content_manager_load_sprites_game$0$0({2}DF,SV:S),C,0,0
+S:G$title_fade_in$0$0({2}DF,SV:S),C,0,0
+S:G$title_fade_out$0$0({2}DF,SV:S),C,0,0
+S:G$init_scroll_title_screen$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_init$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_displayOn$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_displayOff$0$0({2}DF,SV:S),C,0,0
@@ -47,9 +52,9 @@ S:G$devkit_SMS_setLineInterruptHandler$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setLineCounter$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_enableLineInterrupt$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_disableLineInterrupt$0$0({2}DF,SV:S),C,0,0
-S:G$devkit_RGB$0$0({2}DF,SV:S),C,0,0
-S:G$devkit_RGB8$0$0({2}DF,SV:S),C,0,0
-S:G$devkit_RGBHTML$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_RGB$0$0({2}DF,SC:U),C,0,0
+S:G$devkit_RGB8$0$0({2}DF,SC:U),C,0,0
+S:G$devkit_RGBHTML$0$0({2}DF,SL:U),C,0,0
 S:G$devkit_SMS_loadBGPaletteHalfBrightness$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_loadSpritePaletteHalfBrightness$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_zeroBGPalette$0$0({2}DF,SV:S),C,0,0

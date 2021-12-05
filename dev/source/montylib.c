@@ -42,7 +42,7 @@ void waitForFrame(){
 //    for(j = 0;j<16;j++) {
 //        temporal_palette[j] = palette[j];
 //    }
-//    SMS_loadBGPalette(palette);
+//    devkit_SMS_loadBGPalette(palette);
 //    //green 
 //    i = 0;
 //    while(i<4) {
@@ -58,7 +58,7 @@ void waitForFrame(){
 //            j++;
 //        }
 //        waitForFrame();
-//        SMS_loadBGPalette(temporal_palette);
+//        devkit_SMS_loadBGPalette(temporal_palette);
 //        i++;
 //    }
 //    //red
@@ -76,7 +76,7 @@ void waitForFrame(){
 //            j++;
 //        }
 //        waitForFrame();
-//        SMS_loadBGPalette(temporal_palette);
+//        devkit_SMS_loadBGPalette(temporal_palette);
 //        i++;
 //    }
 //    //blue
@@ -94,75 +94,77 @@ void waitForFrame(){
 //            j++;
 //        }
 //        waitForFrame();
-//        SMS_loadBGPalette(temporal_palette);
+//        devkit_SMS_loadBGPalette(temporal_palette);
 //        i++;
 //    }
-//    SMS_zeroBGPalette();
+//    devkit_SMS_zeroBGPalette();
 //}
 
-//void fadeInBGPalette(unsigned char *palette) {
-//    unsigned char i,j,redComponent, greenComponent, blueComponent;
-//    unsigned char temporal_palette[16];
-//    SMS_zeroBGPalette();
-//    j= 0;
-//    for(j = 0;j<16;j++) {
-//        temporal_palette[j] = 0;
-//    } 
-//    //green 
-//    i = 0;
-//    while(i<4) {
-//        j = 0;
-//        while(j<16) {
-//            redComponent = getRedFromRGB(temporal_palette[j]);
-//            greenComponent = getGreenFromRGB(temporal_palette[j]);
-//            blueComponent = getBlueFromRGB(temporal_palette[j]);
-//            if(greenComponent<getGreenFromRGB(palette[j])) {
-//                greenComponent++;
-//            }
-//            temporal_palette[j] = RGB(redComponent,greenComponent,blueComponent);
-//            j++;
-//        }
-//        waitForFrame();
-//        SMS_loadBGPalette(temporal_palette);
-//        i++;
-//    }
-//    //red
-//    i = 0;
-//    while(i<4) {
-//        j = 0;
-//        while(j<16) {
-//            redComponent = getRedFromRGB(temporal_palette[j]);
-//            greenComponent = getGreenFromRGB(temporal_palette[j]);
-//            blueComponent = getBlueFromRGB(temporal_palette[j]);
-//            if(redComponent<getRedFromRGB(palette[j])) {
-//                redComponent++;
-//            }
-//            temporal_palette[j] = RGB(redComponent,greenComponent,blueComponent);
-//            j++;
-//        }
-//        waitForFrame();
-//        SMS_loadBGPalette(temporal_palette);
-//        i++;
-//    }
-//    //blue
-//    i = 0;
-//    while(i<4) {
-//        j = 0;
-//        while(j<16) {
-//            redComponent = getRedFromRGB(temporal_palette[j]);
-//            greenComponent = getGreenFromRGB(temporal_palette[j]);
-//            blueComponent = getBlueFromRGB(temporal_palette[j]);
-//            if(blueComponent<getBlueFromRGB(palette[j])) {
-//                blueComponent++;
-//            }
-//            temporal_palette[j] = RGB(redComponent,greenComponent,blueComponent);
-//            j++;
-//        }
-//        waitForFrame();
-//        SMS_loadBGPalette(temporal_palette);
-//        i++;
-//    }
-//}
+void fadeInBGPalette(unsigned char *palette)
+{
+	unsigned char i, j, redComponent, greenComponent, blueComponent;
+	unsigned char temporal_palette[ 16 ];
+	devkit_SMS_zeroBGPalette();
+	j = 0;
+	for( j = 0; j < 16; j++ ) {
+		temporal_palette[ j ] = 0;
+	}
+	// green
+		i = 0;
+	while( i < 4 ) {
+		j = 0;
+		while( j < 16 ) {
+			redComponent = getRedFromRGB( temporal_palette[ j ] );
+			greenComponent = getGreenFromRGB( temporal_palette[ j ] );
+			blueComponent = getBlueFromRGB( temporal_palette[ j ] );
+			if( greenComponent < getGreenFromRGB( palette[ j ] ) ) {
+				greenComponent++;
+			}
+			temporal_palette[ j ] = devkit_RGB( redComponent, greenComponent, blueComponent );
+			j++;
+		}
+		waitForFrame();
+		devkit_SMS_loadBGPalette( temporal_palette );
+		i++;
+	}
+	// red
+		i = 0;
+	while( i < 4 ) {
+		j = 0;
+		while( j < 16 ) {
+			redComponent = getRedFromRGB( temporal_palette[ j ] );
+			greenComponent = getGreenFromRGB( temporal_palette[ j ] );
+			blueComponent = getBlueFromRGB( temporal_palette[ j ] );
+			if( redComponent < getRedFromRGB( palette[ j ] ) ) {
+				redComponent++;
+			}
+			temporal_palette[ j ] = devkit_RGB( redComponent, greenComponent, blueComponent );
+			j++;
+		}
+		waitForFrame();
+		devkit_SMS_loadBGPalette( temporal_palette );
+		i++;
+	}
+	// blue
+	i = 0;
+	while( i < 4 ) {
+		j = 0;
+		while( j < 16 ) {
+			redComponent = getRedFromRGB( temporal_palette[ j ] );
+			greenComponent = getGreenFromRGB( temporal_palette[ j ] );
+			blueComponent = getBlueFromRGB( temporal_palette[ j ] );
+			if( blueComponent < getBlueFromRGB( palette[ j ] ) ) {
+				blueComponent++;
+			}
+			temporal_palette[ j ] = devkit_RGB( redComponent, greenComponent, blueComponent );
+			j++;
+		}
+		waitForFrame();
+		devkit_SMS_loadBGPalette( temporal_palette );
+		i++;
+	}
+}
+
 //sprites
 
 //void fadeOutSpritePalette(unsigned char *palette) {

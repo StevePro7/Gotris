@@ -3,6 +3,6 @@
 
 void title_fade_in();
 void title_fade_out();
-void fadeInBGPalette( unsigned char *palette );
+//void fadeInBGPalette( unsigned char *palette );
 
 #endif//_FADE_MANAGER_H_

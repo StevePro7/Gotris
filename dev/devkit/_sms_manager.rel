@@ -37,7 +37,7 @@ S _SMS_zeroSpritePalette Ref0000
 S _SMS_setSpriteMode Ref0000
 S _SMS_resetPauseRequest Ref0000
 S _SMS_loadBGPaletteHalfBrightness Ref0000
-A _CODE size 1DF flags 0 addr 0
+A _CODE size 2B5 flags 0 addr 0
 S _devkit_SMS_disableLineInterrupt Def016D
 S _devkit_SMS_copySpritestoSAT Def0145
 S _devkit_SMS_setBackdropColor Def004F
@@ -47,33 +47,33 @@ S _devkit_SMS_setLineCounter Def015B
 S _devkit_SMS_init Def0000
 S _devkit_SMS_loadSTMcompressedTileMap Def008E
 S _devkit_SMS_loadBGPalette Def00AF
-S _devkit_SMS_loadSpritePaletteHalfBrightness Def017D
+S _devkit_SMS_loadSpritePaletteHalfBrightness Def0253
 S _devkit_SMS_enableLineInterrupt Def0167
 S _devkit_SMS_finalizeSprites Def013F
 S _devkit_SMS_setTilePriority Def0110
 S _devkit_SMS_VDPturnOnFeature Def0071
-S _devkit_TILE_PRIORITY Def019B
-S _devkit_RGBHTML Def0175
+S _devkit_TILE_PRIORITY Def0271
+S _devkit_RGBHTML Def01B7
 S _devkit_SMS_setNextTileatXY Def00E5
-S _devkit_RGB8 Def0174
+S _devkit_RGB8 Def018E
 S _devkit_SMS_loadPSGaidencompressedTiles Def0078
 S _devkit_SMS_useFirstHalfTilesforSprites_True Def006C
-S _devkit_VDPFEATURE_HIDEFIRSTCOL Def0197
-S _devkit_SMS_zeroSpritePalette Def0187
+S _devkit_VDPFEATURE_HIDEFIRSTCOL Def026D
+S _devkit_SMS_zeroSpritePalette Def025D
 S _devkit_SMS_disableSRAM Def002D
 S _devkit_SMS_setSpriteMode Def005B
 S _devkit_RGB Def0173
 S _devkit_SMS_resetPauseRequest Def014E
-S _devkit_TILE_USE_SPRITE_PALETTE Def019F
-S _devkit_SMS_loadBGPaletteHalfBrightness Def0176
+S _devkit_TILE_USE_SPRITE_PALETTE Def0275
+S _devkit_SMS_loadBGPaletteHalfBrightness Def024C
 S _devkit_SMS_useFirstHalfTilesforSprites_False Def0067
 S _devkit_UNSAFE_SMS_copySpritestoSAT Def0148
 S _devkit_SMS_setSpritePaletteColor Def00BD
 S _devkit_SMS_displayOff Def0009
-S _devkit_SPRITEMODE_NORMAL Def0194
+S _devkit_SPRITEMODE_NORMAL Def026A
 S _devkit_SMS_enableSRAMBank Def001E
-S _devkit_isCollisionDetected Def018A
-S _devkit_SMS_zeroBGPalette Def0184
+S _devkit_isCollisionDetected Def0260
+S _devkit_SMS_zeroBGPalette Def025A
 S _devkit_SMS_waitForVBlank Def0142
 S _devkit_SMS_setTile Def0109
 S _devkit_SMS_enableSRAM Def0018
@@ -81,7 +81,7 @@ S _devkit_SMS_setBGScrollX Def0037
 S _devkit_SMS_setBGScrollY Def0043
 S _devkit_SMS_initSprites Def013C
 S _devkit_SMS_setLineInterruptHandler Def0151
-S _devkit_SMS_getKeysStatus Def0191
+S _devkit_SMS_getKeysStatus Def0267
 S _devkit_SMS_addSprite Def0121
 S _devkit_SMS_queryPauseRequested Def014B
 S _devkit_SMS_loadSpritePalette Def00B6
@@ -266,71 +266,111 @@ T 6D 01 21 10 00 C3 00 00
 R 00 00 00 00 02 06 04 00
 T 73 01
 R 00 00 00 00
-T 73 01 C9
+T 73 01 21 03 00 39 7E 87 87 21 02 00 39 B6 4F 21
 R 00 00 00 00
-T 74 01
+T 81 01 04 00 39 7E 07 07 07 07 E6 F0 B1 6F C9
 R 00 00 00 00
-T 74 01 C9
+T 8E 01
 R 00 00 00 00
-T 75 01
+T 8E 01 21 02 00 39 7E 07 07 E6 03 4F 21 03 00 39
 R 00 00 00 00
-T 75 01 C9
+T 9C 01 7E 07 07 E6 03 87 87 B1 4F 21 04 00 39 7E
 R 00 00 00 00
-T 76 01
+T AA 01 07 07 E6 03 07 07 07 07 E6 F0 B1 6F C9
 R 00 00 00 00
-T 76 01 C1 E1 E5 C5 C3 00 00
+T B7 01
+R 00 00 00 00
+T B7 01 CD 00 00 F5 F5 DD 7E 06 DD 77 FC DD 7E 07
+R 00 00 00 00 02 03 1E 00
+T C5 01 DD 77 FD DD 36 FE 00 DD 36 FF 00 06 06
+R 00 00 00 00
+T D2 01
+R 00 00 00 00
+T D2 01 DD CB FD 3E DD CB FC 1E 10 F6 DD 6E 04 DD
+R 00 00 00 00
+T E0 01 66 05 11 00 00 06 0E
+R 00 00 00 00
+T E7 01
+R 00 00 00 00
+T E7 01 CB 3A CB 1B CB 1C CB 1D 10 F6 06 02
+R 00 00 00 00
+T F3 01
+R 00 00 00 00
+T F3 01 29 CB 13 CB 12 10 F9 DD 7E FC B5 DD 77 FC
+R 00 00 00 00
+T 01 02 DD 7E FD B4 DD 77 FD DD 7E FE B3 DD 77 FE
+R 00 00 00 00
+T 0F 02 DD 7E FF B2 DD 77 FF DD 6E 04 26 00 11
+R 00 00 00 00
+T 1C 02 00 00 06 06
+R 00 00 00 00
+T 20 02
+R 00 00 00 00
+T 20 02 CB 3A CB 1B CB 1C CB 1D 10 F6 06 04
+R 00 00 00 00
+T 2C 02
+R 00 00 00 00
+T 2C 02 29 CB 13 CB 12 10 F9 7D DD B6 FC 6F 7C DD
+R 00 00 00 00
+T 3A 02 B6 FD 67 7B DD B6 FE 5F 7A DD B6 FF 57 DD
+R 00 00 00 00
+T 48 02 F9 DD E1 C9
+R 00 00 00 00
+T 4C 02
+R 00 00 00 00
+T 4C 02 C1 E1 E5 C5 C3 00 00
 R 00 00 00 00 02 07 22 00
-T 7D 01
+T 53 02
 R 00 00 00 00
-T 7D 01 C1 E1 E5 C5 C3 00 00
+T 53 02 C1 E1 E5 C5 C3 00 00
 R 00 00 00 00 02 07 19 00
-T 84 01
+T 5A 02
 R 00 00 00 00
-T 84 01 C3 00 00
+T 5A 02 C3 00 00
 R 00 00 00 00 02 03 03 00
-T 87 01
+T 5D 02
 R 00 00 00 00
-T 87 01 C3 00 00
+T 5D 02 C3 00 00
 R 00 00 00 00 02 03 1F 00
-T 8A 01
+T 60 02
 R 00 00 00 00
-T 8A 01 3A 00 00 E6 20 6F C9
+T 60 02 3A 00 00 E6 20 6F C9
 R 00 00 00 00 02 03 02 00
-T 91 01
+T 67 02
 R 00 00 00 00
-T 91 01 C3 00 00
+T 67 02 C3 00 00
 R 00 00 00 00 02 03 0B 00
-T 94 01
+T 6A 02
 R 00 00 00 00
-T 94 01 2E 00 C9
+T 6A 02 2E 00 C9
 R 00 00 00 00
-T 97 01
+T 6D 02
 R 00 00 00 00
-T 97 01 21 20 00 C9
+T 6D 02 21 20 00 C9
 R 00 00 00 00
-T 9B 01
+T 71 02
 R 00 00 00 00
-T 9B 01 21 00 10 C9
+T 71 02 21 00 10 C9
 R 00 00 00 00
-T 9F 01
+T 75 02
 R 00 00 00 00
-T 9F 01 21 00 08 C9
+T 75 02 21 00 08 C9
 R 00 00 00 00
-T A3 01
+T 79 02
 R 00 00 00 00
-T A3 01 53 74 65 76 65 6E 20 42 6F 6C 61 6E 64 00
+T 79 02 53 74 65 76 65 6E 20 42 6F 6C 61 6E 64 00
 R 00 00 00 00
-T B1 01
+T 87 02
 R 00 00 00 00
-T B1 01 47 6F 74 72 69 73 00
+T 87 02 47 6F 74 72 69 73 00
 R 00 00 00 00
-T B8 01
+T 8E 02
 R 00 00 00 00
-T B8 01 47 6F 74 72 69 73 20 66 6F 72 20 53 4D 53
+T 8E 02 47 6F 74 72 69 73 20 66 6F 72 20 53 4D 53
 R 00 00 00 00
-T C6 01 20 50 6F 77 65 72 21 20 32 30 31 39 20 43
+T 9C 02 20 50 6F 77 65 72 21 20 32 30 31 39 20 43
 R 00 00 00 00
-T D4 01 6F 6D 70 65 74 69 74 69 6F 6E 00
+T AA 02 6F 6D 70 65 74 69 74 69 6F 6E 00
 R 00 00 00 00
 T F0 7F
 R 00 00 09 00

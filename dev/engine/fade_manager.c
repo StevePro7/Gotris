@@ -1,11 +1,12 @@
 #include "fade_manager.h"
+#include "../source/montylib.h"
 #include "../devkit/_sms_manager.h"
 #include "../banks/bank2.h"
 
 void title_fade_in()
 {
 	devkit_SMS_mapROMBank( titlescreentiles_psgcompr_bank );
-	//fadeInBGPalette( ( void * ) titlescreenpalette_bin );
+	fadeInBGPalette( ( void * ) titlescreenpalette_bin );
 }
 void title_fade_out()
 {
