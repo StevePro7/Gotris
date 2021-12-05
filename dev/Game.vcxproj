@@ -164,6 +164,7 @@
     <ClCompile Include="screen\splash_screen.c" />
     <ClCompile Include="screen\test_screen.c" />
     <ClCompile Include="screen\title_screen.c" />
+    <ClCompile Include="source\montylib.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="banks\bank2.h" />
@@ -186,6 +187,7 @@
     <ClInclude Include="screen\splash_screen.h" />
     <ClInclude Include="screen\test_screen.h" />
     <ClInclude Include="screen\title_screen.h" />
+    <ClInclude Include="source\montylib.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="build.bat" />

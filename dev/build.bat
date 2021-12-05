@@ -63,6 +63,10 @@ sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 ti
 ::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 test_screen.c
 cd ..
 
+cd source
+sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 montylib.c
+cd ..
+
 :: echo Build main
 sdcc -c -mz80 --opt-code-size --peep-file peep-rules.txt --std-c99 main.c
 
@@ -78,7 +82,8 @@ engine\font_manager.rel engine\hack_manager.rel ^
 engine\input_manager.rel engine\locale_manager.rel ^
 engine\screen_manager.rel engine\scroll_manager.rel ^
 screen\none_screen.rel screen\splash_screen.rel screen\title_screen.rel ^
-screen\test_screen.rel
+screen\test_screen.rel ^
+source\montylib.rel
 
 :: Execute
 ihx2sms output.ihx output.sms
@@ -95,6 +100,9 @@ cd engine
 if exist "*.asm" del "*.asm" > nul; if exist "*.lst" del "*.lst" > nul; if exist "*.sym" del "*.sym" > nul
 cd ..
 cd screen
+if exist "*.asm" del "*.asm" > nul; if exist "*.lst" del "*.lst" > nul; if exist "*.sym" del "*.sym" > nul
+cd ..
+cd source
 if exist "*.asm" del "*.asm" > nul; if exist "*.lst" del "*.lst" > nul; if exist "*.sym" del "*.sym" > nul
 cd ..
 

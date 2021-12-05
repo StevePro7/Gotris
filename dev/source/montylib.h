@@ -20,15 +20,15 @@
 #define getGreenFromRGB(color)      ((color&1100)>>2)
 #define getBlueFromRGB(color)      ((color&110000)>>4)
 
-void init_console();
+//void init_console();
 void waitForFrame();
 
-unsigned char rand();
-unsigned char getKeysHeld();
+//unsigned char rand();
+//unsigned char getKeysHeld();
 
-void fadeOutBGPalette(unsigned char *palette);
-void fadeInBGPalette(unsigned char *palette);
-void fadeOutSpritePalette(unsigned char *palette);
-void fadeInSpritePalette(unsigned char *palette);
+//void fadeOutBGPalette(unsigned char *palette);
+//void fadeInBGPalette(unsigned char *palette);
+//void fadeOutSpritePalette(unsigned char *palette);
+//void fadeInSpritePalette(unsigned char *palette);
 
 #endif //GOTRIS_MONTYLIB_H_H

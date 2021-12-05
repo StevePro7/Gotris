@@ -37,6 +37,12 @@
     <Filter Include="Header Files\screen">
       <UniqueIdentifier>{41b76798-0711-4ceb-9944-cf3c29bc817c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\source">
+      <UniqueIdentifier>{a5ac7e99-604e-4422-8b9c-020499315252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\source">
+      <UniqueIdentifier>{f3e87384-6ee6-4f06-a4ce-3186edba2403}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -99,6 +105,9 @@
     <ClCompile Include="engine\fade_manager.c">
       <Filter>Source Files\engine</Filter>
     </ClCompile>
+    <ClCompile Include="source\montylib.c">
+      <Filter>Source Files\source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -160,6 +169,9 @@
     </ClInclude>
     <ClInclude Include="engine\fade_manager.h">
       <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="source\montylib.h">
+      <Filter>Header Files\source</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
