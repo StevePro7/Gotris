@@ -96,7 +96,7 @@
     <ClCompile Include="engine\scroll_manager.c">
       <Filter>Source Files\screen</Filter>
     </ClCompile>
-    <ClCompile Include="engine\fade_manager.cpp">
+    <ClCompile Include="engine\fade_manager.c">
       <Filter>Source Files\engine</Filter>
     </ClCompile>
   </ItemGroup>

@@ -150,7 +150,7 @@
     <ClCompile Include="devkit\_snd_manager.c" />
     <ClCompile Include="engine\content_manager.c" />
     <ClCompile Include="engine\enum_manager.c" />
-    <ClCompile Include="engine\fade_manager.cpp" />
+    <ClCompile Include="engine\fade_manager.c" />
     <ClCompile Include="engine\font_manager.c" />
     <ClCompile Include="engine\global_manager.c" />
     <ClCompile Include="engine\hack_manager.c" />

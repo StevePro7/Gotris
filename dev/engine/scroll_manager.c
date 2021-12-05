@@ -1,6 +1,12 @@
 #include "scroll_manager.h"
 #include "../devkit/_sms_manager.h"
 
+#ifdef _CONSOLE
+#else
+#pragma disable_warning 158
+#endif
+
+
 //title screen
 unsigned int scroll_x[ 6 ];
 unsigned char lineCnt;

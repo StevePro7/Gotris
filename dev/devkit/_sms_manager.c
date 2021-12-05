@@ -173,7 +173,7 @@ void devkit_RGB8( const unsigned char r, const unsigned char g, const unsigned c
 {
 	RGB8( r, g, b );
 }
-void devkit_RGBHTML( const unsigned int RGB24bit )
+void devkit_RGBHTML( const unsigned long RGB24bit )
 {
 	RGBHTML( RGB24bit );
 }

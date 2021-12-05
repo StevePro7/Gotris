@@ -50,7 +50,7 @@ void devkit_SMS_disableLineInterrupt(); //  SMS_VDPturnOffFeature( 0x0010 )  /* 
 /* SMS functions to set a color / load a palette */
 void devkit_RGB( const unsigned char r, const unsigned char g, const unsigned char b );
 void devkit_RGB8( const unsigned char r, const unsigned char g, const unsigned char b );
-void devkit_RGBHTML( const unsigned int RGB24bit );
+void devkit_RGBHTML( const unsigned long RGB24bit );
 void devkit_SMS_loadBGPaletteHalfBrightness( void *palette ); //__z88dk_fastcall;
 void devkit_SMS_loadSpritePaletteHalfBrightness( void *palette ); // __z88dk_fastcall;
 void devkit_SMS_zeroBGPalette( void );

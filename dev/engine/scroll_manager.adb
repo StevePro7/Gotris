@@ -38,6 +38,13 @@ S:G$devkit_SMS_setLineInterruptHandler$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_setLineCounter$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_enableLineInterrupt$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_SMS_disableLineInterrupt$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_RGB$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_RGB8$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_RGBHTML$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_loadBGPaletteHalfBrightness$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_loadSpritePaletteHalfBrightness$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_zeroBGPalette$0$0({2}DF,SV:S),C,0,0
+S:G$devkit_SMS_zeroSpritePalette$0$0({2}DF,SV:S),C,0,0
 S:G$devkit_isCollisionDetected$0$0({2}DF,SC:U),C,0,0
 S:G$devkit_SMS_getKeysStatus$0$0({2}DF,SI:U),C,0,0
 S:G$devkit_SPRITEMODE_NORMAL$0$0({2}DF,SC:U),C,0,0
