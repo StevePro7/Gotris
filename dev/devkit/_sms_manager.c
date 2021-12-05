@@ -97,6 +97,8 @@ void devkit_SMS_setSpritePaletteColor( const unsigned char entry, const unsigned
 	SMS_setSpritePaletteColor( entry, color );
 }
 
+
+
 void devkit_SMS_setNextTileatXY( unsigned char x, unsigned char y )
 {
 	SMS_setNextTileatXY( x, y );
@@ -161,6 +163,37 @@ void devkit_SMS_disableLineInterrupt()
 {
 	SMS_VDPturnOffFeature( 0x0010 );  /* turns off line IRQ */
 }
+
+/* SMS functions to set a color / load a palette */
+void devkit_RGB( const unsigned char r, const unsigned char g, const unsigned char b )
+{
+	RGB( r, g, b );
+}
+void devkit_RGB8( const unsigned char r, const unsigned char g, const unsigned char b )
+{
+	RGB8( r, g, b );
+}
+void devkit_RGBHTML( const unsigned int RGB24bit )
+{
+	RGBHTML( RGB24bit );
+}
+void devkit_SMS_loadBGPaletteHalfBrightness( void *palette )
+{
+	SMS_loadBGPaletteHalfBrightness( palette );
+}
+void devkit_SMS_loadSpritePaletteHalfBrightness( void *palette )
+{
+	SMS_loadSpritePaletteHalfBrightness( palette );
+}
+void devkit_SMS_zeroBGPalette( void )
+{
+	SMS_zeroBGPalette();
+}
+void devkit_SMS_zeroSpritePalette( void )
+{
+	SMS_zeroSpritePalette();
+}
+
 
 // collision
 unsigned char devkit_isCollisionDetected()

@@ -96,6 +96,9 @@
     <ClCompile Include="engine\scroll_manager.c">
       <Filter>Source Files\screen</Filter>
     </ClCompile>
+    <ClCompile Include="engine\fade_manager.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -153,6 +156,9 @@
       <Filter>Header Files\engine</Filter>
     </ClInclude>
     <ClInclude Include="engine\scroll_manager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\fade_manager.h">
       <Filter>Header Files\engine</Filter>
     </ClInclude>
   </ItemGroup>

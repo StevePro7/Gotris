@@ -17,6 +17,7 @@ cd engine
 sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 content_manager.c
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 enemy_manager.c
 ::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 enum_manager.c
+sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 fade_manager.c
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 font_manager.c
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 function_manager.c
 ::::sdcc --debug -c -mz80 --opt-code-size --peep-file ..\peep-rules.txt --std-c99 gamer_manager.c
@@ -72,7 +73,7 @@ sdcc -o output.ihx -mz80 --no-std-crt0 --data-loc 0xC000 ^
 ..\lib\PSGlib.rel ^
 banks\bank2.rel  banks\bank3.rel ^
 devkit\_sms_manager.rel devkit\_snd_manager.rel ^
-engine\content_manager.rel engine\enum_manager.rel ^
+engine\content_manager.rel engine\enum_manager.rel engine\fade_manager.rel ^
 engine\font_manager.rel engine\hack_manager.rel ^
 engine\input_manager.rel engine\locale_manager.rel ^
 engine\screen_manager.rel engine\scroll_manager.rel ^
